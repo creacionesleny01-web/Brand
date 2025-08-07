@@ -1,0 +1,131 @@
+:root {--COLOR1: rgb(138, 138, 138); --COLOR2: black;}
+
+* {font-family: Arial; color: var(--COLOR2);}
+body::before {
+    margin: 0;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(var(--COLOR1),transparent);
+    z-index: -1;
+}
+
+/*-------------INIT TRANSITION---------------*/
+
+/*H1 - White rectangles and Animation*/
+.INIT>h1 {
+    position: absolute;
+    background: white;
+    width: 135px; height: 2000px; top: -100px; z-index: 1;
+    animation: TRANS 0.9s ease-out 0.3s forwards normal;
+}
+
+@keyframes TRANS {100%{width: 0px; background: transparent; transform: rotate(-15deg);}}
+
+/*H1 - Rectangle positions*/
+.i1 {left: 0%;}
+.i2 {left: 10%;}
+.i3 {left: 20%;}
+.i4 {left: 30%;}
+.i5 {left: 40%;}
+.i6 {left: 50%;}
+.i7 {left: 60%;}
+.i8 {left: 70%;}
+.i9 {left: 80%;}
+.i10 {left: 90%;}
+
+/*-------------------------------*/
+
+/*-------------SECTION 1 (Logo and searchbox)---------------*/
+
+/*IMG1 - BRAND Logo and Animation*/
+.SECT1-IMG1 {
+    position: relative;
+    width: 250px;
+    margin: 20px; margin-left: 40%; top: -200px;
+    animation: TRANS2 2s ease-in-out forwards normal;
+}
+@keyframes TRANS2 {100%{top: 15px;}}
+
+/*INPUT1 - Search Box*/
+.INPUT1 {text-align: center; margin: 20px;}
+.SECT1-INPUT1 {width: 250px;}
+.SECT1-LINKS1 {text-align: right; margin-right: 50px;}
+.SECT1-LINKS1>a {text-decoration: none; margin: 0% 5px;}
+
+/*-----------------------------------------------------------*/
+
+/*-------------SECTION 2 (Catalog)---------------*/
+
+.SECT2 {text-align: center; padding: 40px 0px;}
+
+/*H1 - "Visita nuestro catalogo"*/
+.SECT2-TITLE1 {margin-bottom: 30px;}
+
+/*NAV1 - Side Scroll section*/
+.SECT2-NAV1 {position: relative; left: 200px; width: 900px; overflow: hidden;}
+
+/*NAV1 - Side Scroll Images*/
+.SECT2-NAV1-SCROLL-img>img {width: 900px;}
+.SECT2-NAV1-SCROLL {
+    display: flex; position: relative;
+    transition: 0.5s ease-out;
+}
+
+/*NAV1 - Side Scroll Dots*/
+.SECT2-NAV1-SCROLL-BAR:hover {border: 2px solid var(--COLOR1); background: transparent;}
+.SECT2-NAV1-SCROLL-BAR {
+    color: transparent; background: var(--COLOR1);
+    border-radius: 50%; cursor: pointer;
+    width: 20px; height: 20px; margin: 0 5px;
+    transition: 0.1s ease-out;
+}
+
+/*NAV1 - Side Scroll Animations*/
+input[name="BAR"] {position: absolute; visibility: hidden;}
+#BAR1:checked ~ .SECT2-NAV1-SCROLL {left: -40px;}
+#BAR2:checked ~ .SECT2-NAV1-SCROLL {left: -940px;}
+#BAR3:checked ~ .SECT2-NAV1-SCROLL {left: -1840px;}
+#BAR4:checked ~ .SECT2-NAV1-SCROLL {left: -2740px;}
+
+@keyframes slide {
+    0% {}
+    20% {}
+
+    25% {}
+    45% {}
+
+    50% {}
+    70% {}
+
+    75% {}
+    100% {}
+}
+
+.SECT2-NAV2 {margin: 100px 0px;}
+.SECT2-NAV2-SCROLL {background: linear-gradient(var(--COLOR1),transparent); border-radius: 10%;}
+.SECT2-NAV2-SCROLL-img>img {width: 150px; transition: 0.1s ease-in-out;}
+.SECT2-NAV2-SCROLL-img {width: 150px; height: 155px; background: white; padding: 1px; border-radius: 10%; transition: 0.1s ease-in-out;}
+.CAT1-TXT {visibility: hidden; padding: 0px; margin: 0px; font-style: oblique;}
+
+.SECT2-NAV2-SCROLL-img>img:hover {width: 250px;}
+.SECT2-NAV2-SCROLL-img:hover {width: 250px; height: 300px;}
+.SECT2-NAV2-SCROLL-img>img:hover ~ .CAT1-TXT {visibility: visible;}
+
+
+/*----------------------------------------------*/
+
+/*-------------SECTION 3 (Our Work?)---------------*/
+
+.SECT3 {text-align: center;}
+.SECT3>h1 {margin: 40px 0px;}
+.SECT3>p {padding: 10px 180px;}
+
+/*P1 - Service list*/
+.SECT3>.P1 {text-align: center; padding: 10px 220px; padding-right: 1000px;}
+
+/*P2 - Contact links*/
+.SECT3>.P2 {text-align: center;}
+.SECT3>.P2>a {margin: 10px 40px;}
+
+/*-------------------------------------------------*/
