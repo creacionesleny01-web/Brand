@@ -50,7 +50,9 @@ body::before {
 /*INPUT1 - Search Box*/
 .INPUT1 {text-align: center; margin: 20px;}
 .SECT1-INPUT1 {width: 250px;}
-.SECT1-LINKS1 {text-align: right; margin-right: 5em;}
+
+/*SECT1-LINKS - Social Media Links*/
+.SECT1-LINKS1 {text-align: right; margin-right: 5vw;}
 .SECT1-LINKS1>a {text-decoration: none; margin: 0% 5px;}
 
 /*-----------------------------------------------------------*/
@@ -118,14 +120,14 @@ input[name="BAR"] {position: absolute; visibility: hidden;}
 /*-------------SECTION 3 (Nuestro tabajo?)---------------*/
 
 .SECT3 {text-align: center;}
-.SECT3>h1 {margin: 2em 0em;}
-.SECT3>p {padding: 1em 6em;}
+.SECT3>h1 {margin: 2vw 0vw;}
+.SECT3>p {padding: 1vw 6vw;}
 
 /*P1 - Service list*/
 .SECT3>.P1 {text-align: center; left: 10%;}
 
 /*P2 - Contact links*/
 .SECT3>.P2 {text-align: center;}
-.SECT3>.P2>a {margin: 10px 40px;}
+.SECT3>.P2>a {margin: 0vw 8vw;}
 
 /*-------------------------------------------------*/
